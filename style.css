@@ -1,0 +1,682 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.section1 {
+        width: 80%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:0 auto;
+        /* animation-name: screen; */
+}
+.section3__s1,.section3__s2,.section3__s3,.section3__s4,.section3__s5{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.section1__s1{
+    display: flex;
+    align-items: center;
+    
+}
+.section1__s1 img{
+    width: 50px;
+    height:50px;
+}
+.section1__s2{
+    display: flex;
+    gap:30px;
+}
+.section1_s2 p,.section1_s3 p{
+    font-size: 20px;
+}
+.section1__s3{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.section1_s3_button{
+    background-color:black;
+    color: white;
+    padding:10px;
+    border-radius: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.section2{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.section3{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    padding: 20px;
+}
+.section3_s1,.section3s2,.section3s3,.section3s4,.section3_s5{
+    display: flex;
+    align-items: center;
+
+}
+.section3_s1 img,.section3s2 img,.section3s3 img,.section3s4 img,.section3_s5 img{
+    width: 20px;
+    height:20px;
+}
+.section3_s1 p,.section3s2 p,.section3s3 p,.section3s4 p,.section3_s5 p{
+    font-size: 20px;
+}
+.section3__s1 img,
+.section3__s1 p,
+.section3__s2 img,
+.section3__s2 p,
+.section3__s3 img,
+.section3__s3 p,
+.section3__s4 img,
+.section3__s4 p,
+.section3__s5 img,
+.section3__s5 p {
+    transition: opacity 0.3s, text-decoration 0.3s;
+    cursor: pointer;
+}
+
+.section3__s1:hover img,
+.section3__s1:hover p,
+.section3__s2:hover img,
+.section3__s2:hover p,
+.section3__s3:hover img,
+.section3__s3:hover p,
+.section3__s4:hover img,
+.section3__s4:hover p,
+.section3__s5:hover img,
+.section3__s5:hover p {
+    opacity: 0.5;
+}
+
+.section3__s1:hover p,
+.section3__s2:hover p,
+.section3__s3:hover p,
+.section3__s4:hover p,
+.section3__s5:hover p {
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* This will push navbar_s1 to the left and navbar_s2 to the right */
+    align-items: center; /* Align items vertically */
+    border: solid transparent 1px; /* Set border for the navbar */
+    border-radius: 40px; /* Add border-radius for rounded corners */
+    padding: 10px;
+    max-width: 1000px; /* Limit maximum width to center it on the page */
+    margin: 0 auto; /* Auto margins to center the navbar */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.navbar__s1 {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.navbar__s1 input {
+    width: 300px;
+    border: none;
+    font-size: 19px;
+    padding: 10px;
+}
+.navbar__s1 input:focus{
+    outline: none;
+
+}
+
+.navbar__s2 button {
+    background-color:#30D99C;
+    color: black;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.section5 {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+.section5 img {
+    width: 80%; /* Set desired width */
+    max-width: 1400px; /* Set maximum width if needed */
+    height: 500px; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.section6 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section6 h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section6 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.section6__image-row {
+    display: flex;
+}
+
+.section6__image-container {
+    flex: 1;
+    margin-right: 10px; /* Adjust the spacing between images */
+}
+
+.section6__image-container:last-child {
+    margin-right: 0; /* Remove margin for the last image */
+}
+
+.section6__image-container img {
+    width: 100%; /* Make images fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+.section6 {
+    /* Your existing styles for .section6 */
+    position: relative;
+}
+
+.section6__image-container {
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    color: white; /* Text color */
+    font-size: 32px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    z-index: 1; /* Ensure text is above the image */
+}
+
+
+.section7 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section7 h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section7 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.section7__image-container {
+    display: flex;
+    gap: 10px; /* Adjust the gap between image containers */
+}
+
+.section7_image-container_one,
+.section7_image-container_two,
+.section7_image-container_three,
+.section7_image-container_four {
+    flex: 1; /* Each image container takes equal space */
+    text-align: center;
+}
+
+.section7_image-container_one img,
+.section7_image-container_two img,
+.section7_image-container_three img,
+.section7_image-container_four img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.section7_image-container_one h2,
+.section7_image-container_two h2,
+.section7_image-container_three h2,
+.section7_image-container_four h2 {
+    font-size: 18px;
+}
+
+.section7_image-container_one p,
+.section7_image-container_two p,
+.section7_image-container_three p,
+.section7_image-container_four p {
+    margin-bottom: 5px;
+}
+/*section 8 */
+.section8 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section8 h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section8 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.section8__image-row {
+    display: flex;
+}
+
+.section8__image-container {
+    flex: 1;
+    margin-right: 10px; /* Adjust the spacing between images */
+}
+
+.section8__image-container:last-child {
+    margin-right: 0; /* Remove margin for the last image */
+}
+
+.section8__image-container img {
+    width: 100%; /* Make images fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+.section8 {
+    /* Your existing styles for .section8 */
+    position: relative;
+}
+
+.section8__image-container {
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    color: white; /* Text color */
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    z-index: 1; /* Ensure text is above the image */
+}
+
+/*section 9 */
+.box_section9{
+    background-color: bisque;
+}
+.section9 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto; /* Centers the section horizontally */
+}
+
+.section9_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section9_container > div {
+    width: calc(33.33% - 20px); /* Adjusted for margin */
+    margin: 10px; /* Adjusted for spacing between images */
+    text-align: center;
+}
+
+.section9_container img {
+    width: 100%;
+    height: auto; /* To maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.section9_container h4 {
+    margin-top: 10px; /* Adjusted for spacing between image and text */
+}
+
+.section10 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section10 h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section10 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.section10__image-row {
+    display: flex;
+}
+
+.section10__image-container {
+    flex: 1;
+    margin-right: 10px; /* Adjust the spacing between images */
+}
+
+.section10__image-container:last-child {
+    margin-right: 0; /* Remove margin for the last image */
+}
+
+.section10__image-container img {
+    width: 100%; /* Make images fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+.section10 {
+    /* Your existing styles for .section10 */
+    position: relative;
+}
+
+.section10__image-container {
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    color: white; /* Text color */
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    z-index: 1; /* Ensure text is above the image */
+}
+
+.section11 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section11 h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section11 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.section11__image-row {
+    display: flex;
+}
+
+.section11__image-container {
+    flex: 1;
+    margin-right: 10px; /* Adjust the spacing between images */
+}
+
+.section11__image-container:last-child {
+    margin-right: 0; /* Remove margin for the last image */
+}
+
+.section11__image-container img {
+    width: 100%; /* Make images fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+.section11 {
+    /* Your existing styles for .section11 */
+    position: relative;
+}
+
+.section11__image-container {
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    color: white; /* Text color */
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    z-index: 1; /* Ensure text is above the image */
+}
+.videos {
+    width: 80%;
+    margin: 0 auto; /* To horizontally center the video */
+}
+
+.videos video {
+    width: 100%; /* To make sure the video fills its container */
+}
+.videos p{
+    margin-left: 10px;
+    padding: 5px;
+
+}
+.videos h4{
+    margin-left: 5px;
+    padding:10px;
+
+}
+
+.section12 {
+    width: 80%; /* Set section12 to 80% of the viewport width */
+    margin: 0 auto; /* Center the section horizontally */
+}
+
+.section12__container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap:10px;
+    
+}
+
+.section12__container-image {
+    margin-top: 30px;
+    flex: 0 0 calc(26% - 20px); /* Each image container takes up 33.33% of the width with some gap */
+    margin-bottom: 20px; /* Add space between image containers */
+    text-align: center; /* Center the content horizontally */
+}
+
+.section12__container-image h3 {
+    margin: 0; /* Remove margin for the paragraph */
+}
+
+.section12__container-image img {
+    width: 100%; /* Make images fill the container */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+.section12__container-image p{
+    font-size: 15px;
+}
+/* section 13 */
+.section13 {
+    width: 100%;
+}
+
+.section13 img {
+    width: 100%;
+    height: auto;
+}
+
+.upperFooter{
+    display: flex;
+    background-color: #faf1ed;
+    padding: 0 1%;
+    gap: 0 1%;
+    justify-content: space-between;
+    padding:70px;
+}
+
+.upperFooter li{
+    list-style: none;
+    color: rgb(0, 0, 0);
+    /* font-weight:bold; */
+    line-height: 1.5;
+}
+
+.upperFooter li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.upperFooter li:first-child{
+    /* color: #949291; */
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.upperFooter li:first-child:hover{
+    cursor: auto;
+    text-decoration: none;
+}
+
+.upperFooter_left_part{
+    display: flex;
+    width: 50%;
+    /* border: 1px solid blue; */
+    gap:20px;
+    
+}
+
+.upperFooter_right_part{
+    width: 36%;
+    /* text-align: center; */
+    font-size: 20px;
+    /* border: 1px solid blue; */
+    
+}
+
+.upperFooter_right_part p{
+    font-size: 16px;
+}
+
+
+
+/* Css for lower footer */
+
+
+
+.lowerFooter{
+    /* border: 1px solid black; */
+    background-color: #faf1ed;
+    display: flex;
+    gap: 0 1%;
+    /* padding: 2%; */
+    padding: 0 2%;
+    padding-left:60px;
+    padding-right:100px;
+    padding-bottom: 20px;
+}
+
+.lowerFooter_left_part{
+    /* border: 1px solid red; */
+    width: 60%;
+}
+
+.lowerFooter_left_part > div {
+    /* border: 1px solid blue; */
+    display: flex;
+}
+
+.lowerFooter_left_part > div:nth-child(1) > div:first-child{
+    /* border: 1px solid red; */
+    width: 10%;
+    /* display: flex; */
+}
+
+.lowerFooter_left_part > div:nth-child(1) > div:first-child img{
+    /* border: 1px solid blue; */
+    width: 80%;
+    margin-top: 30%;
+}
+
+.copyrigth_whole_div{
+    /* border: 1px solid blue;    */
+    /* display: flex; */
+    width: 90%;
+}
+.copyrigth_whole_div_s1{
+    padding-top: 30px;
+}
+.copyrigth_whole_div_s2{
+    white-space: nowrap;
+
+}
+.copyrigth_whole_div_s1 p{
+    font-size: 10px;
+}
+.copyrigth_whole_div_s3{
+    padding-top: 10px;
+    
+}
+.copyrigth_whole_div > div:nth-child(2) div{
+    /* border: 1px solid green; */
+    width: 80%;
+    line-height: 0;
+    padding-top: 20px;
+    display: flex;
+}
+
+.copyrigth_whole_div > div:nth-child(2) p{
+    color:  #333;;
+    font-weight: bold;
+    display: inline;
+    margin-right: 5%;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.lowerFooter_left_part > div:nth-child(2),.lowerFooter_left_part > div:nth-child(1){
+    color: #333333;
+    font-size: 13px;
+    letter-spacing: .1px;
+}
+
+.lowerFooter_left_part span{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lowerFooter_left_part span:hover{
+    text-decoration: underline;
+}
+
+.lowerFooter_right_part{
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+.lowerFooter_right_part > div > select{
+    width: 40%;
+    padding: 1.5% 2%;
+    border: 2px solid #d4d8d4;;
+    border-radius: 15px;
+}
+
+.lowerFooter_right_part > div:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    
+}
+
+.lowerFooter_right_part > div:nth-child(2){
+    display: flex;
+    gap: 0 3%;
+    justify-content: end;
+    margin-top: 3%;
+    margin-right: 2%;
+}

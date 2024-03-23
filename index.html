@@ -7,7 +7,6 @@
     <title>Tripadvisor</title>
     <!--style sheet link-->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./Images/tripadvisor-icon.png">
     <!--Font awesome cdn link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -16,224 +15,230 @@
 </head>
 
 <body>
-    <!--section1-->
-    <div class="section1">
-        <div class="section1__s1">
-            <img src="./Images/tripadvisor-icon.png">
-            <h1>Tripadvisor</h1>
-        </div>
-        <div class="section1__s2">
-            <p>Discover</p>
-            <p>Trips</p>
-            <p>Review</p>
-            <p>Flights</p>
-        </div>
-        <div class="section1__s3">
-            <i class="fa-solid fa-globe" style="color: #000000;"></i>
-            <p>|</p>
-            <p>INR</p>
-            <button class="section1_s3_button"> Sign in</button>
-        </div>
+    <!-- block: section1 -->
+<div class="section1">
+    <div class="section1__s1">
+        <img src="./Images/tripadvisor-icon.png" class="section1__s1-icon" alt="Tripadvisor Icon">
+        <h1 class="section1__s1-title">Tripadvisor</h1>
     </div>
+    <div class="section1__s2">
+        <p class="section1__s2-item">Discover</p>
+        <p class="section1__s2-item">Trips</p>
+        <p class="section1__s2-item">Review</p>
+        <p class="section1__s2-item">Flights</p>
+    </div>
+    <div class="section1__s3">
+        <i class="fa-solid fa-globe section1__s3-icon" style="color: #000000;"></i>
+        <p class="section1__s3-separator">|</p>
+        <p class="section1__s3-currency">INR</p>
+        <button class="section1__s3-button">Sign in</button>
+    </div>
+</div>
 
-    <!--section2-->
-    <div class="section2">
-        <h1>Where to?</h1>
-    </div>
+    <!-- block: section2 -->
+<div class="section2">
+    <h1 class="section2__title">Where to?</h1>
+</div>
 
-    <!--section3-->
-    <div class="section3">
-        <div class="section3__s1">
-              <i class="fa-solid fa-house" style="color: #0c0d0d;"></i>
-            <p>Search All</p>
-        </div>
-        <div class="section3__s2">
-            <i class="fa-solid fa-bed" style="color: #0f0f10;"></i>
-            <p>Hotels</p>
-        </div>
-        <div class="section3__s3">
-            <i class="fa-solid fa-list"></i>
-            <p>Things to Do</p>
-        </div>
-        <div class="section3__s4">
-            <i class="fa-solid fa-spoon" style="color: #1b1c1d;"></i>
-            <p>Restaurants</p>
-        </div>
-        <div class="section3__s5">
-            <i class="fa-solid fa-unlock-keyhole" style="color: #202122;"></i>
-            <p>Holiday Homes</p>
+   <!-- block: section3 -->
+<div class="section3">
+    <div class="section3__item">
+        <img src="./Images/section3-home.png" alt="Search All">
+        <p class="section3__item-text">Search All</p>
+    </div>
+    <div class="section3__item">
+        <img src="./Images/section3-bed.png" alt="Hotels">
+        <p class="section3__item-text">Hotels</p>
+    </div>
+    <div class="section3__item">
+        <img src="./Images/section3-files.png" alt="Things to Do">
+        <p class="section3__item-text">Things to Do</p>
+    </div>
+    <div class="section3__item">
+        <img src="./Images/section-3fork.png" alt="Restaurants">
+        <p class="section3__item-text">Restaurants</p>
+    </div>
+    <div class="section3__item">
+        <img src="./Images/section-3key.png" alt="Holiday Homes">
+        <p class="section3__item-text">Holiday Homes</p>
+    </div>
+</div>
 
-        </div>
-    </div>
 
-    <!--section4-->
-    <div class="navbar" id="navbar">
-        <div class="navbar__s1">
-            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-            <input placeholder="Place to go, Thinks to do, Hotels...">
-        </div>
-        <div class="navbar__s2">
-            <button>Search</button>
-        </div>
+    <!-- block: navbar section 4-->
+<div class="navbar" id="navbar">
+    <div class="navbar__search">
+        <i class="navbar__icon fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+        <input class="navbar__input" placeholder="Place to go, Thinks to do, Hotels...">
     </div>
+    <div class="navbar__button">
+        <button class="navbar__search-button">Search</button>
+    </div>
+</div>
 
-    <!--section 5-->
-    <div class="section5">
-        <img src="./Images/section-5.png">
-    </div>
-    <br></br>
+   <!-- block: section5 -->
+<div class="section5">
+    <img class="section5__image" src="./Images/section-5.png">
+</div>
+<br></br>
 
-    <!--section6-->
-    <div class="section6">
-        <h1>2024's award-winning shores</h1>
-        <p>Travellers Choice Awards Best of the Best Beaches</p>
-        <div class="section6__image-row">
-            <div class="section6__image-container">
-                <img src="./Images/section6-1.jpg">
-                <div class="image-text">Asia Beaches</div>
-            </div>
-            <div class="section6__image-container">
-                <img src="./Images/section6-2.jpg">
-                <div class="image-text">Caribbean Beaches</div>
-            </div>
-            <div class="section6__image-container">
-                <img src="./Images/section6-3.jpg">
-                <div class="image-text">Europe Beaches</div>
-            </div>
-            <div class="section6__image-container">
-                <img src="./Images/section6-4.jpg">
-                <div class="image-text">South Pacific Beaches</div>
-            </div>
-        </div>
-    </div>
-    <br></br>
 
-    <!--section7-->
-    <div class="section7">
-        <h1>Ways to tour Coimbatore</h1>
-        <p>Book these experiences for a close-up look at Coimbatore.</p>
-        <div class="section7__image-container">
-            <div class="section7_image-container_one">
-                <img src="./Images/section7-1.jpg">
-                <h2>Romantic Tour to Coimbatore</h2>
-                <p>⭐⭐⭐⭐⭐</p>
-                <p>from ₹499 per group</p>
-            </div>
-            <div class="section7_image-container_two">
-                <img src="./Images/section7-2.jpg">
-                <h2>Coimbatore Darshan with Uber</h2>
-                <p>⭐⭐⭐</p>
-                <p>from ₹299 per group</p>
-            </div>
-            <div class="section7_image-container_three">
-                <img src="./Images/section7-3.jpg">
-                <h2>Hillstation Tour from Coimbatore to Valparai</h2>
-                <p>⭐⭐⭐⭐</p>
-                <p>from ₹599 per adult</p>
-            </div>
-            <div class="section7_image-container_four">
-                <img src="./Images/section7-4.jpg">
-                <h2>Coimbatore to Ooty-Hotels+Sightseeing</h2>
-                <p>⭐⭐⭐⭐⭐</p>
-                <p>from ₹799 per adult</p>
-            </div>
+   <!-- block: section6 -->
+<div class="section6">
+    <h1 class="section6__title">2024's award-winning shores</h1>
+    <p class="section6__description">Travellers Choice Awards Best of the Best Beaches</p>
+    <div class="section6__image-row">
+        <div class="section6__image-container">
+            <img class="section6__image" src="./Images/section6-1.jpg">
+            <div class="section6__image-text">Asia Beaches</div>
+        </div>
+        <div class="section6__image-container">
+            <img class="section6__image" src="./Images/section6-2.jpg">
+            <div class="section6__image-text">Caribbean Beaches</div>
+        </div>
+        <div class="section6__image-container">
+            <img class="section6__image" src="./Images/section6-3.jpg">
+            <div class="section6__image-text">Europe Beaches</div>
+        </div>
+        <div class="section6__image-container">
+            <img class="section6__image" src="./Images/section6-4.jpg">
+            <div class="section6__image-text">South Pacific Beaches</div>
         </div>
     </div>
-    <br></br>
-    <!--section 8-->
-    <div class="section8">
-        <h1>Vibrant Asian cities</h1>
-        <p>From rich cultural history to psychedelic streets</p>
-        <div class="section8__image-row">
-            <div class="section8__image-container">
-                <img src="./Images/section8-1.jpg">
-                <div class="image-text">Hanoi, Vietnam</div>
-            </div>
-            <div class="section8__image-container">
-                <img src="./Images/section8-2.jpg">
-                <div class="image-text">Phuket, Thailand</div>
-            </div>
-            <div class="section8__image-container">
-                <img src="./Images/section8-3.jpg">
-                <div class="image-text">Ho Chi Minh City, Vietnam</div>
-            </div>
-            <div class="section8__image-container">
-                <img src="./Images/section8-4.jpg">
-                <div class="image-text">Bali, Indonesia</div>
-            </div>
-        </div>
-    </div>
-    <br></br>
+</div>
+<br></br>
 
-    <!--section 9-->
-    <div class="box_section9">
-        <div class="section9">
-            <h1>More to explore</h1>
-            <div class="section9_container">
-                <div>
-                    <img src="./Images/section9-1.jpg">
-                    <h4>A Guide to Newton:Sydney's coolest neighbourhood</h4>
-                </div>
-                <div>
-                    <img src="./Images/section9-2.jpg">
-                    <h4>8 lessor-Knows spots for the best Sydney Harbour view</h4>
-                </div>
-                <div>
-                    <img src="./Images/section9-1.jpg">
-                    <h4>Bali chefs share their top restaurant,spas and more</h4>
-                </div>
+
+   <!-- block: section7 -->
+<div class="section7">
+    <h1 class="section7__title">Ways to tour Coimbatore</h1>
+    <p class="section7__description">Book these experiences for a close-up look at Coimbatore.</p>
+    <div class="section7__image-container">
+        <div class="section7__image-container_one">
+            <img class="section7__image" src="./Images/section7-1.jpg">
+            <h2 class="section7__title">Romantic Tour to Coimbatore</h2>
+            <p class="section7__rating">⭐⭐⭐⭐⭐</p>
+            <p class="section7__price">from ₹499 per group</p>
+        </div>
+        <div class="section7__image-container_two">
+            <img class="section7__image" src="./Images/section7-2.jpg">
+            <h2 class="section7__title">Coimbatore Darshan with Uber</h2>
+            <p class="section7__rating">⭐⭐⭐</p>
+            <p class="section7__price">from ₹299 per group</p>
+        </div>
+        <div class="section7__image-container_three">
+            <img class="section7__image" src="./Images/section7-3.jpg">
+            <h2 class="section7__title">Hillstation Tour from Coimbatore to Valparai</h2>
+            <p class="section7__rating">⭐⭐⭐⭐</p>
+            <p class="section7__price">from ₹599 per adult</p>
+        </div>
+        <div class="section7__image-container_four">
+            <img class="section7__image" src="./Images/section7-4.jpg">
+            <h2 class="section7__title">Coimbatore to Ooty-Hotels+Sightseeing</h2>
+            <p class="section7__rating">⭐⭐⭐⭐⭐</p>
+            <p class="section7__price">from ₹799 per adult</p>
+        </div>
+    </div>
+</div>
+<br></br>
+
+   <!-- block: section8 -->
+<div class="section8">
+    <h1 class="section8__title">Vibrant Asian cities</h1>
+    <p class="section8__description">From rich cultural history to psychedelic streets</p>
+    <div class="section8__image-row">
+        <div class="section8__image-container">
+            <img class="section8__image" src="./Images/section8-1.jpg">
+            <div class="section8__image-text">Hanoi, Vietnam</div>
+        </div>
+        <div class="section8__image-container">
+            <img class="section8__image" src="./Images/section8-2.jpg">
+            <div class="section8__image-text">Phuket, Thailand</div>
+        </div>
+        <div class="section8__image-container">
+            <img class="section8__image" src="./Images/section8-3.jpg">
+            <div class="section8__image-text">Ho Chi Minh City, Vietnam</div>
+        </div>
+        <div class="section8__image-container">
+            <img class="section8__image" src="./Images/section8-4.jpg">
+            <div class="section8__image-text">Bali, Indonesia</div>
+        </div>
+    </div>
+</div>
+<br></br>
+
+
+   <!-- block: box-section9 -->
+<div class="box-section9">
+    <!-- block: section9 -->
+    <div class="section9">
+        <h1 class="section9__title">More to explore</h1>
+        <div class="section9__container">
+            <div class="section9__item">
+                <img class="section9__image" src="./Images/section9-1.jpg">
+                <h4 class="section9__subtitle">A Guide to Newton: Sydney's coolest neighbourhood</h4>
+            </div>
+            <div class="section9__item">
+                <img class="section9__image" src="./Images/section9-2.jpg">
+                <h4 class="section9__subtitle">8 lesser-known spots for the best Sydney Harbour view</h4>
+            </div>
+            <div class="section9__item">
+                <img class="section9__image" src="./Images/section9-1.jpg">
+                <h4 class="section9__subtitle">Bali chefs share their top restaurant, spas and more</h4>
             </div>
         </div>
     </div>
-    <br></br>
-    <!--section 10-->
-    <div class="section10">
-        <h1>Dream Your Next Trip</h1>
-        <p>Weekend getaways from Coimbatore</p>
-        <div class="section10__image-row">
-            <div class="section10__image-container">
-                <img src="./Images/section10-1.jpg">
-                <div class="image-text">Pondicherry, India</div>
-            </div>
-            <div class="section10__image-container">
-                <img src="./Images/section10-2.jpg">
-                <div class="image-text">Ooty, India</div>
-            </div>
-            <div class="section10__image-container">
-                <img src="./Images/section10-3.jpg">
-                <div class="image-text">Madurai, India</div>
-            </div>
-            <div class="section10__image-container">
-                <img src="./Images/section10-4.jpg">
-                <div class="image-text">Bengaluru, India</div>
-            </div>
+</div>
+<br></br>
+
+    <!-- block: section10 -->
+<div class="section10">
+    <h1 class="section10__title">Dream Your Next Trip</h1>
+    <p class="section10__subtitle">Weekend getaways from Coimbatore</p>
+    <div class="section10__image-row">
+        <div class="section10__image-container">
+            <img class="section10__image" src="./Images/section10-1.jpg">
+            <div class="section10__image-text">Pondicherry, India</div>
+        </div>
+        <div class="section10__image-container">
+            <img class="section10__image" src="./Images/section10-2.jpg">
+            <div class="section10__image-text">Ooty, India</div>
+        </div>
+        <div class="section10__image-container">
+            <img class="section10__image" src="./Images/section10-3.jpg">
+            <div class="section10__image-text">Madurai, India</div>
+        </div>
+        <div class="section10__image-container">
+            <img class="section10__image" src="./Images/section10-4.jpg">
+            <div class="section10__image-text">Bengaluru, India</div>
         </div>
     </div>
-    <br></br>
-    <!--section 11-->
-    <div class="section11">
-        <h1>Top destinations for your next holiday</h1>
-        <p>Here's where your fellow travellers are headed</p>
-        <div class="section11__image-row">
-            <div class="section11__image-container">
-                <img src="./Images/section11-1.jpg">
-                <div class="image-text">Kyoto, Japan</div>
-            </div>
-            <div class="section11__image-container">
-                <img src="./Images/section11-2.jpg">
-                <div class="image-text">Hanoi, Veitnam</div>
-            </div>
-            <div class="section11__image-container">
-                <img src="./Images/section11-3.jpg">
-                <div class="image-text">Singapore, Singapore</div>
-            </div>
-            <div class="section11__image-container">
-                <img src="./Images/section11-4.jpg">
-                <div class="image-text">Dubai, United arab Emirates</div>
-            </div>
+</div>
+
+   <!-- block: section11 -->
+<div class="section11">
+    <h1 class="section11__title">Top destinations for your next holiday</h1>
+    <p class="section11__subtitle">Here's where your fellow travellers are headed</p>
+    <div class="section11__image-row">
+        <div class="section11__image-container">
+            <img class="section11__image" src="./Images/section11-1.jpg">
+            <div class="section11__image-text">Kyoto, Japan</div>
+        </div>
+        <div class="section11__image-container">
+            <img class="section11__image" src="./Images/section11-2.jpg">
+            <div class="section11__image-text">Hanoi, Veitnam</div>
+        </div>
+        <div class="section11__image-container">
+            <img class="section11__image" src="./Images/section11-3.jpg">
+            <div class="section11__image-text">Singapore, Singapore</div>
+        </div>
+        <div class="section11__image-container">
+            <img class="section11__image" src="./Images/section11-4.jpg">
+            <div class="section11__image-text">Dubai, United arab Emirates</div>
         </div>
     </div>
-    <br></br>
+</div>
+
 
     <!--video-->
     <div class="videos">
@@ -245,36 +250,36 @@
         <p>Follow authentic travellers as they visit unknown destinations to write their own travel guide</p>
     </div>
     <br></br>
-    <!--section 12-->
-    <div class="section12">
-        <h1>Home Rentals Near You</h1>
-        <div class="section12__container">
-            <div class="section12__container-image">
-                <h3>We think you'd enjoy these homes for a quick trip out of town.</h3>
-            </div>
-            <div class="section12__container-image">
-                <img src="./Images/section12-1.jpg">
-                <h4>Rentals in Ooty</h4>
-                <p>43 rentals</p>
-            </div>
-            <div class="section12__container-image">
-                <img src="./Images/section12-2.jpg">
-                <h4>Rentals in Conoor</h4>
-                <p>19 rentals</p>
-            </div>
-            <div class="section12__container-image">
-                <img src="./Images/section12-1.jpg">
-                <h4>Rentals in Yelagiri</h4>
-                <p>10 rentals</p>
-            </div>
+   <!-- block: section12 -->
+<div class="section12">
+    <h1 class="section12__title">Home Rentals Near You</h1>
+    <div class="section12__container">
+        <div class="section12__container-image">
+            <h3 class="section12__description">We think you'd enjoy these homes for a quick trip out of town.</h3>
+        </div>
+        <div class="section12__container-image">
+            <img class="section12__image" src="./Images/section12-1.jpg">
+            <h4 class="section12__image-title">Rentals in Ooty</h4>
+            <p class="section12__image-count">43 rentals</p>
+        </div>
+        <div class="section12__container-image">
+            <img class="section12__image" src="./Images/section12-2.jpg">
+            <h4 class="section12__image-title">Rentals in Coonoor</h4>
+            <p class="section12__image-count">19 rentals</p>
+        </div>
+        <div class="section12__container-image">
+            <img class="section12__image" src="./Images/section12-1.jpg">
+            <h4 class="section12__image-title">Rentals in Yelagiri</h4>
+            <p class="section12__image-count">10 rentals</p>
         </div>
     </div>
-    <br></br>
-    <!--section 13-->
-    <div class="section13">
-        <img src="./Images/section-13.png">
-    </div>
-    <br></br>
+</div>
+
+   <!-- block: section13 -->
+<div class="section13">
+    <img class="section13__image" src="./Images/section-13.png">
+</div>
+
 
     <!-- footer part -->
         <div class="upperFooter">

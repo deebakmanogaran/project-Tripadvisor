@@ -6,112 +6,111 @@
 body {
     font-family: Arial, sans-serif;
 }
+
+/* block: section1 */
 .section1 {
-        width: 80%;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin:0 auto;
-        /* animation-name: screen; */
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    /* animation-name: screen; */
 }
-.section3__s1,.section3__s2,.section3__s3,.section3__s4,.section3__s5{
+
+/* element: section1__s1 */
+.section1__s1 {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
-.section1__s1{
-    display: flex;
-    align-items: center;
-    
-}
-.section1__s1 img{
+
+/* element: section1__s1-icon */
+.section1__s1-icon {
     width: 50px;
-    height:50px;
+    height: 50px;
 }
-.section1__s2{
+
+
+/* element: section1__s2 */
+.section1__s2 {
     display: flex;
-    gap:30px;
+    gap: 30px;
 }
-.section1_s2 p,.section1_s3 p{
+
+/* element: section1__s2-item */
+.section1__s2-item {
     font-size: 20px;
 }
-.section1__s3{
+
+/* element: section1__s3 */
+.section1__s3 {
     display: flex;
     gap: 10px;
     align-items: center;
 }
-.section1_s3_button{
-    background-color:black;
+
+/* element: section1__s3-button */
+.section1__s3-button {
+    background-color: black;
     color: white;
-    padding:10px;
+    padding: 10px;
     border-radius: 30px;
     margin-left: 20px;
     font-size: 20px;
+    /* Add any specific styles for the button here */
 }
-.section2{
+
+
+/* block: section2 */
+.section2 {
     display: flex;
     justify-content: center;
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.section3{
+
+
+/* block: section3 */
+.section3 {
     display: flex;
     justify-content: center;
-    gap:20px;
+    gap: 20px;
     padding: 20px;
 }
-.section3_s1,.section3s2,.section3s3,.section3s4,.section3_s5{
+
+/* element: section3__item */
+.section3__item {
     display: flex;
     align-items: center;
+}
 
-}
-.section3_s1 img,.section3s2 img,.section3s3 img,.section3s4 img,.section3_s5 img{
-    width: 20px;
-    height:20px;
-}
-.section3_s1 p,.section3s2 p,.section3s3 p,.section3s4 p,.section3_s5 p{
+/* element: section3__item-text */
+.section3__item-text {
     font-size: 20px;
 }
-.section3__s1 img,
-.section3__s1 p,
-.section3__s2 img,
-.section3__s2 p,
-.section3__s3 img,
-.section3__s3 p,
-.section3__s4 img,
-.section3__s4 p,
-.section3__s5 img,
-.section3__s5 p {
-    transition: opacity 0.3s, text-decoration 0.3s;
-    cursor: pointer;
+
+/* element: section3__item > img */
+.section3__item > img {
+    width: 20px;
+    height: 20px;
 }
 
-.section3__s1:hover img,
-.section3__s1:hover p,
-.section3__s2:hover img,
-.section3__s2:hover p,
-.section3__s3:hover img,
-.section3__s3:hover p,
-.section3__s4:hover img,
-.section3__s4:hover p,
-.section3__s5:hover img,
-.section3__s5:hover p {
+/* Hover effect */
+.section3__item:hover > img,
+.section3__item:hover > .section3__item-text {
     opacity: 0.5;
 }
 
-.section3__s1:hover p,
-.section3__s2:hover p,
-.section3__s3:hover p,
-.section3__s4:hover p,
-.section3__s5:hover p {
+.section3__item:hover > .section3__item-text {
     text-decoration: underline;
 }
 
+
+/* block: navbar  section 4*/
 .navbar {
     display: flex;
-    justify-content: space-between; /* This will push navbar_s1 to the left and navbar_s2 to the right */
+    justify-content: space-between; /* This will push navbar__search to the left and navbar__button to the right */
     align-items: center; /* Align items vertically */
     border: solid transparent 1px; /* Set border for the navbar */
     border-radius: 40px; /* Add border-radius for rounded corners */
@@ -121,24 +120,32 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.navbar__s1 {
+/* element: navbar__search */
+.navbar__search {
     display: flex;
     align-items: center; /* Align items vertically */
 }
 
-.navbar__s1 input {
+/* element: navbar__icon */
+.navbar__icon {
+    color: #000000;
+}
+
+/* element: navbar__input */
+.navbar__input {
     width: 300px;
     border: none;
     font-size: 19px;
     padding: 10px;
 }
-.navbar__s1 input:focus{
-    outline: none;
 
+.navbar__input:focus {
+    outline: none;
 }
 
-.navbar__s2 button {
-    background-color:#30D99C;
+/* element: navbar__search-button */
+.navbar__search-button {
+    background-color: #30D99C;
     color: black;
     border: none;
     padding: 15px 20px;
@@ -146,63 +153,65 @@ body {
     cursor: pointer;
     font-size: 20px;
 }
-
+/* block: section5 */
 .section5 {
     display: flex;
     justify-content: center; /* Center horizontally */
     margin-top: 50px; /* Adjust margin as needed */
 }
 
-.section5 img {
+/* element: section5__image */
+.section5__image {
     width: 80%; /* Set desired width */
     max-width: 1400px; /* Set maximum width if needed */
     height: 500px; /* Maintain aspect ratio */
     border-radius: 10px;
 }
-
+/* block: section6 */
 .section6 {
     width: 80%;
     margin: 0 auto;
+    position: relative;
 }
 
-.section6 h1 {
+/* element: section6__title */
+.section6__title {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.section6 p {
+/* element: section6__description */
+.section6__description {
     font-size: 16px;
     margin-bottom: 20px;
 }
 
+/* element: section6__image-row */
 .section6__image-row {
     display: flex;
 }
 
+/* element: section6__image-container */
 .section6__image-container {
     flex: 1;
     margin-right: 10px; /* Adjust the spacing between images */
+    position: relative;
 }
 
+/* element: section6__image-container:last-child */
 .section6__image-container:last-child {
     margin-right: 0; /* Remove margin for the last image */
 }
 
-.section6__image-container img {
+/* element: section6__image */
+.section6__image {
     width: 100%; /* Make images fill the container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
 }
-.section6 {
-    /* Your existing styles for .section6 */
-    position: relative;
-}
 
-.section6__image-container {
-    position: relative;
-}
-
-.image-text {
+/* element: section6__image-text */
+.section6__image-text {
     position: absolute;
     bottom: 10px; /* Adjust as needed */
     left: 10px; /* Adjust as needed */
@@ -212,101 +221,95 @@ body {
     z-index: 1; /* Ensure text is above the image */
 }
 
-
+/* block: section7 */
 .section7 {
     width: 80%;
     margin: 0 auto;
 }
 
-.section7 h1 {
+/* element: section7__title */
+.section7__title {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.section7 p {
+/* element: section7__description */
+.section7__description {
     font-size: 16px;
     margin-bottom: 20px;
 }
 
+/* element: section7__image-container */
 .section7__image-container {
     display: flex;
     gap: 10px; /* Adjust the gap between image containers */
 }
 
-.section7_image-container_one,
-.section7_image-container_two,
-.section7_image-container_three,
-.section7_image-container_four {
+/* element: section7__image-container_one, section7__image-container_two, section7__image-container_three, section7__image-container_four */
+.section7__image-container_one,
+.section7__image-container_two,
+.section7__image-container_three,
+.section7__image-container_four {
     flex: 1; /* Each image container takes equal space */
     text-align: center;
 }
 
-.section7_image-container_one img,
-.section7_image-container_two img,
-.section7_image-container_three img,
-.section7_image-container_four img {
+/* element: section7__image */
+.section7__image {
     max-width: 100%; /* Ensure images don't exceed container width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
 }
 
-.section7_image-container_one h2,
-.section7_image-container_two h2,
-.section7_image-container_three h2,
-.section7_image-container_four h2 {
+/* element: section7__rating */
+.section7__rating {
     font-size: 18px;
 }
 
-.section7_image-container_one p,
-.section7_image-container_two p,
-.section7_image-container_three p,
-.section7_image-container_four p {
+/* element: section7__price */
+.section7__price {
     margin-bottom: 5px;
 }
-/*section 8 */
+
+/* block: section8 */
 .section8 {
     width: 80%;
     margin: 0 auto;
 }
 
-.section8 h1 {
+/* element: section8__title */
+.section8__title {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.section8 p {
+/* element: section8__description */
+.section8__description {
     font-size: 16px;
     margin-bottom: 20px;
 }
 
+/* element: section8__image-row */
 .section8__image-row {
     display: flex;
 }
 
+/* element: section8__image-container */
 .section8__image-container {
     flex: 1;
+    position: relative;
     margin-right: 10px; /* Adjust the spacing between images */
 }
 
-.section8__image-container:last-child {
-    margin-right: 0; /* Remove margin for the last image */
-}
-
-.section8__image-container img {
+/* element: section8__image */
+.section8__image {
     width: 100%; /* Make images fill the container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
 }
-.section8 {
-    /* Your existing styles for .section8 */
-    position: relative;
-}
 
-.section8__image-container {
-    position: relative;
-}
-
-.image-text {
+/* element: section8__image-text */
+.section8__image-text {
     position: absolute;
     bottom: 10px; /* Adjust as needed */
     left: 10px; /* Adjust as needed */
@@ -316,10 +319,13 @@ body {
     z-index: 1; /* Ensure text is above the image */
 }
 
-/*section 9 */
-.box_section9{
-    background-color: #FFF7E1;
+
+/* block: box-section9 */
+.box-section9 {
+    background-color: bisque;
 }
+
+/* block: section9 */
 .section9 {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -327,70 +333,73 @@ body {
     margin: 0 auto; /* Centers the section horizontally */
 }
 
-.section9_container {
+
+
+/* element: section9__container */
+.section9__container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.section9_container > div {
+/* element: section9__item */
+.section9__item {
     width: calc(33.33% - 20px); /* Adjusted for margin */
     margin: 10px; /* Adjusted for spacing between images */
     text-align: center;
 }
 
-.section9_container img {
+/* element: section9__image */
+.section9__image {
     width: 100%;
     height: auto; /* To maintain aspect ratio */
     border-radius: 10px;
 }
 
-.section9_container h4 {
+/* element: section9__subtitle */
+.section9__subtitle {
     margin-top: 10px; /* Adjusted for spacing between image and text */
 }
 
+/* block: section10 */
 .section10 {
     width: 80%;
     margin: 0 auto;
+    position: relative;
 }
 
-.section10 h1 {
+/* element: section10__title */
+.section10__title {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.section10 p {
+/* element: section10__subtitle */
+.section10__subtitle {
     font-size: 16px;
     margin-bottom: 20px;
 }
 
+/* element: section10__image-row */
 .section10__image-row {
     display: flex;
 }
 
+/* element: section10__image-container */
 .section10__image-container {
     flex: 1;
     margin-right: 10px; /* Adjust the spacing between images */
+    position: relative;
 }
 
-.section10__image-container:last-child {
-    margin-right: 0; /* Remove margin for the last image */
-}
-
-.section10__image-container img {
+/* element: section10__image */
+.section10__image {
     width: 100%; /* Make images fill the container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
 }
-.section10 {
-    /* Your existing styles for .section10 */
-    position: relative;
-}
 
-.section10__image-container {
-    position: relative;
-}
-
-.image-text {
+/* element: section10__image-text */
+.section10__image-text {
     position: absolute;
     bottom: 10px; /* Adjust as needed */
     left: 10px; /* Adjust as needed */
@@ -400,49 +409,46 @@ body {
     z-index: 1; /* Ensure text is above the image */
 }
 
+/* block: section11 */
 .section11 {
     width: 80%;
     margin: 0 auto;
+    position: relative;
 }
 
-.section11 h1 {
+/* element: section11__title */
+.section11__title {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.section11 p {
+/* element: section11__subtitle */
+.section11__subtitle {
     font-size: 16px;
     margin-bottom: 20px;
 }
 
+/* element: section11__image-row */
 .section11__image-row {
     display: flex;
 }
 
+/* element: section11__image-container */
 .section11__image-container {
     flex: 1;
     margin-right: 10px; /* Adjust the spacing between images */
+    position: relative;
 }
 
-.section11__image-container:last-child {
-    margin-right: 0; /* Remove margin for the last image */
-}
-
-.section11__image-container img {
+/* element: section11__image */
+.section11__image {
     width: 100%; /* Make images fill the container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
 }
-.section11 {
-    /* Your existing styles for .section11 */
-    position: relative;
-}
 
-.section11__image-container {
-    position: relative;
-}
-
-.image-text {
+/* element: section11__image-text */
+.section11__image-text {
     position: absolute;
     bottom: 10px; /* Adjust as needed */
     left: 10px; /* Adjust as needed */
@@ -451,6 +457,7 @@ body {
     font-weight: bold; /* Adjust font weight as needed */
     z-index: 1; /* Ensure text is above the image */
 }
+/* block: videos */
 .videos {
     width: 80%;
     margin: 0 auto; /* To horizontally center the video */
@@ -459,29 +466,31 @@ body {
 .videos video {
     width: 100%; /* To make sure the video fills its container */
 }
-.videos p{
+
+.videos p {
     margin-left: 10px;
     padding: 5px;
-
 }
-.videos h4{
+
+.videos h4 {
     margin-left: 5px;
-    padding:10px;
-
+    padding: 10px;
 }
 
+/* block: section12 */
 .section12 {
     width: 80%; /* Set section12 to 80% of the viewport width */
     margin: 0 auto; /* Center the section horizontally */
 }
 
+/* element: section12__container */
 .section12__container {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
-    gap:10px;
-    
+    gap: 10px;
 }
 
+/* element: section12__container-image */
 .section12__container-image {
     margin-top: 30px;
     flex: 0 0 calc(26% - 20px); /* Each image container takes up 33.33% of the width with some gap */
@@ -489,28 +498,68 @@ body {
     text-align: center; /* Center the content horizontally */
 }
 
-.section12__container-image h3 {
+/* element: section12__description */
+.section12__description {
     margin: 0; /* Remove margin for the paragraph */
 }
 
-.section12__container-image img {
+/* element: section12__image */
+.section12__image {
     width: 100%; /* Make images fill the container */
     height: 200px; /* Maintain aspect ratio */
     border-radius: 10px;
 }
-.section12__container-image p{
-    font-size: 15px;
+
+/* element: section12__image-title */
+.section12__image-title {
+    font-size: 18px; /* Adjust font size as needed */
 }
-/* section 13 */
+
+/* element: section12__image-count */
+.section12__image-count {
+    font-size: 15px; /* Adjust font size as needed */
+}
+
+/* block: section13 */
 .section13 {
     width: 100%;
 }
 
-.section13 img {
+/* element: section13__image */
+.section13__image {
     width: 100%;
     height: auto;
 }
 
+
+/* .upperfooter{
+    display: flex;
+    justify-content: space-around;
+}
+.upperfooter_leftpart{
+    display: flex;
+    gap:30px;
+    
+}
+.upperfooter ul {
+    list-style-type: none;
+    font-size: 10px;
+}
+.upperfooter_right_part{
+    font-size: 10px;
+}
+.upperfooter_leftpart_s1 li:first-child,
+.upperfooter_leftpart_s2 li:first-child,
+.upperfooter_leftpart_s3_one li:first-child,
+.upperfooter_leftpart_s3_two li:first-child {
+    font-weight:bold;
+    font-size: 1.2em; 
+}
+.upperfooter_right_part p{
+    font-weight: 10px;
+
+}  */
+/* block footer */
 .upperFooter{
     display: flex;
     background-color: #faf1ed;
@@ -566,8 +615,6 @@ body {
 
 
 /* Css for lower footer */
-
-
 
 .lowerFooter{
     /* border: 1px solid black; */
